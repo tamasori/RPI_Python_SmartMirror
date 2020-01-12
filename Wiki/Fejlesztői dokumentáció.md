@@ -93,7 +93,7 @@ Táblák:
 
 ## Kapcsolási rajz
 
-![Kapcsolási rajz](https://lh3.googleusercontent.com/nB0s_xL2sSm92PswF71w0Zwcjjo_ZYTI4mWFflvwcG4cTBlzG2USH2IMVrjRmpu0OAy8QEPI8DSFYUDKEL596ibKiBPXETkXHFvj1SZxm3JbQuAvB9fOOxQvHw0tYB0MvF7y1PpSw-kNo4sfOzOnyhsa3IoI8ewPJq4UrxUNjQF8i7nPgTk62xJGnnhpJI_gZYOC1B4AiUQQbFKKWK6kTZXT6EIR6EoWa0dPJf8a9xQdrG5Ne0OOEC1kWnO8PBcIALhOEj4YamoanHOKNxz0SZy0drDpIO93Azt2Tv4DBuQ6DMIS4rfok7w3ITA6sM-lZSVfX7NDZGOsc-KLnXZ-cVN-sW6j6HzB-8nlH0jKXrpjpiOZXIdIKXtg3BjiyA-fGmgYW7WYGmgObqdcswqmSK4w35iyxliVqABkiAT6GockBm_kN5mP59ZJ-O78jJ6PJMtJEHGTzOu9kwYI15A_0iqOKLgrdcltCSIhVHVXop01hzZLtY7oxnUEqkYX9yBvP2ck6GCEpweed5T78WBlsrEYt819_LhR_g8mrz_IhBA8-gMxKtHWdege1SOra6f5XLZAgrUgM6LpAcEB-JazJI9DKgMt8y6lkx00mne2dFRc4QJdTOnuMwbsrVa4gNVmF_Z6j-p99NeWspGjLOnV_ulxliacoLxYFDxyziTgzbLS-UqvrMGp_w=w863-h970-no)
+![Kapcsolási rajz](http://www.kepfeltoltes.eu/images/2020/01/12/432kapcsolas.png)
 
 # Backend, frontend részek, modulok
 
@@ -111,7 +111,7 @@ A méréseket 0.5 másodpercenként végzi el.
 
 ## Tweet modul
 
-A Twitter kapcsolatot a `Twython` csomag végzi, és egy Twitter dev fiókkal van összekötve. Amennyiben a szoba hőmérséklete 18 celsius fok alá, vagy 28 celsius fok felé megy, akkor ez a Twitter dev fiók megemlít engem egy Tweetben, amiben értesít engem.
+A Twitter kapcsolatot a `Twython` csomag végzi, és egy Twitter dev fiókkal van összekötve. Amennyiben a szoba hőmérséklete 18 celsius fok alá, vagy 26 celsius fok felé megy, akkor ez a Twitter dev fiók megemlít engem egy Tweetben, amiben értesít engem.
 
     val = subprocess.check_output("python3 /home/pi/Okostukor/homeres.py", shell=True)
     val = val.decode("ascii").strip()
