@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Okostükör beállítása</title>
+    <link rel="shortcut icon" type="image/png" href="static/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='w3.css') }}">
+
+    <style>
+        .w3-bar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="w3-light-gray">
+    <div class="w3-bar w3-card-4 w3-blue-gray">
+        <a href="/" class="w3-bar-item w3-button w3-indigo w3-hover-blue">Beállítások</a>
+        <a href="/meresek" class="w3-bar-item w3-button w3-hover-blue">Mérések</a>
+      </div>
+      
+    <div class="w3-row w3-margin-top">
+        <div class="w3-col s1 m3 l4"> </div>
+        <div class="w3-col s10 m6 l4">
+
+            <div class="w3-card-4 w3-white">
+                <div class="w3-container w3-teal">
+                    <h2>Tartozkodási hely beállítása</h2>
+                </div>
+                <form class="w3-container" action="/zip" method="POST">
+                    <p>      
+                    <label class="w3-text-teal"><b>Irányítószám</b></label>
+                    <input class="w3-input w3-border w3-light-grey" name="zip" type="number"></p>
+                    <p>      
+                    <button class="w3-btn w3-teal">Beállítás</button></p>
+                </form>
+            </div>
+
+            <div class="w3-card-4 w3-white w3-margin-top">
+                <div class="w3-container w3-indigo">
+                    <h2>Wifi elérés beállítása</h2>
+                </div>
+                <form class="w3-container" action="/wifi" method="POST">
+                    <p>      
+                    <label class="w3-text-indigo"><b>Wifi-SSID</b></label>
+                    <input class="w3-input w3-border w3-light-grey" name="ssid" type="text"></p>
+                    <p>    
+                    <label class="w3-text-indigo"><b>Wifi Jelszó</b></label>
+                    <input class="w3-input w3-border w3-light-grey" name="jelszo" type="password"></p>
+                    <p>        
+                    <button class="w3-btn w3-indigo">Beállítás</button></p>
+                </form>
+            </div>
+
+        </div>
+        <div class="w3-col s1 m3 l4"> </div>
+    </div>
+</body>
+</html>
