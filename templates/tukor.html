@@ -121,16 +121,16 @@
 <script>
     hirek = [];
     aktualis_hir_id = 0;
-
+    $("#nincsnet").hide();
     ido_lekeres();
     idojaras_lekeres();
     hirek_lekerese();
     van_net();
 
-    setInterval(idojaras_lekeres, 300000);
+    setInterval(idojaras_lekeres, 3000);
     setInterval(ido_lekeres, 1000);
     setInterval(hirek_lekerese, 300000);
-    setInterval(hirek_mutatasa, 5000);
+    setInterval(hirek_mutatasa, 8000);
     setInterval(van_net, 1000);
 
     function idojaras_lekeres(){   
@@ -201,15 +201,17 @@
     }
 
     function van_net(){
-        if(navigator.onLine){
-            $("#idojaras").show();
-            $("#hirek").show();
-            $("#nincsnet").hide();
-        }else{
-            $("#idojaras").hide();
-            $("#hirek").hide();
-            $("#nincsnet").show();
-        }
+        $.get("/vannet", function(data, status){
+            if(data=="van"){
+                $("#idojaras").show();
+                $("#hirek").show();
+                $("#nincsnet").hide();
+            }else{
+                $("#idojaras").hide();
+                $("#hirek").hide();
+                $("#nincsnet").show();
+            } 
+        });
     }
 
 </script>

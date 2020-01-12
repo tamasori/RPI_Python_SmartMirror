@@ -63,5 +63,3 @@ def vannet():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True, port=80)
-
-#https://raspberrypi.stackexchange.com/questions/69204/open-chromium-full-screen-on-start-up
